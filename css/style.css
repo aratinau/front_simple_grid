@@ -79,11 +79,12 @@ body {
     float: left;
     min-height: 1px; }
   .grid-tuto .tuto-content {
-    padding: 1em;
-    margin: 8px;
+    padding: 0 0.5em;
     background: white;
     text-align: center;
     border: 1px solid #e3e3e3; }
+  .grid-tuto .row-tuto {
+    margin: 0 -0.5em; }
   .grid-tuto .col-x-1 {
     width: 8.33333%; }
   .grid-tuto .col-x-2 {
@@ -134,6 +135,9 @@ body {
     .grid-tuto .col-s-12 {
       width: 100%; } }
   @media only screen and (min-width: 480px) {
+    .grid-tuto .col-m-center {
+      margin: 0 auto;
+      float: none; }
     .grid-tuto .col-m-1 {
       width: 8.33333%; }
     .grid-tuto .col-m-2 {

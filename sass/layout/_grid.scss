@@ -91,14 +91,18 @@
         float: left;
         min-height: 1px;
     }
+    $gutter: 1em!default;
     .tuto-content {
-        padding: 1em;
-        margin: 8px;
+        padding: 0 $gutter * 0.5;
+        // margin: 8px;
         background:  white;
         // border-radius: 3px;
         // box-shadow: 0 1px 1px rgba(0,0,0,.3);
         text-align: center;
         border: 1px solid #e3e3e3;
+    }
+    .row-tuto {
+        margin: 0 $gutter * -0.5;
     }
     
     // pour trouver ces valeurs :
@@ -118,7 +122,6 @@
     .col-12 {width: 100%;}*/
 
     $columns: 12!default;
-    $gutter: 20px!default;
     @for $i from 1 through $columns {
         .col-x-#{$i} { width: $i / $columns * 100%; }
     }
@@ -135,6 +138,7 @@
         }
     }
     @media only screen and (min-width: $medium ) {
+        .col-m-center { margin: 0 auto; float: none; }
         @for $i from 1 through $columns {
             .col-m-#{$i} { width: $i / $columns * 100%; }
         }

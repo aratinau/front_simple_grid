@@ -43,7 +43,8 @@ liste des projets
     - d'abord a la main (pour les calculs des width)
     - explication de la boucle
     - responsive
-    - center et offset
+    - center
+    - offset
 - [] typographie
 - [] page article
 - [] Bonus: cube en 3d ? pourquoi bonus ?
