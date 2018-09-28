@@ -84,27 +84,102 @@ body {
     background: white;
     text-align: center;
     border: 1px solid #e3e3e3; }
-  .grid-tuto .col-1 {
+  .grid-tuto .col-x-1 {
     width: 8.33333%; }
-  .grid-tuto .col-2 {
+  .grid-tuto .col-x-2 {
     width: 16.66667%; }
-  .grid-tuto .col-3 {
+  .grid-tuto .col-x-3 {
     width: 25%; }
-  .grid-tuto .col-4 {
+  .grid-tuto .col-x-4 {
     width: 33.33333%; }
-  .grid-tuto .col-5 {
+  .grid-tuto .col-x-5 {
     width: 41.66667%; }
-  .grid-tuto .col-6 {
+  .grid-tuto .col-x-6 {
     width: 50%; }
-  .grid-tuto .col-7 {
+  .grid-tuto .col-x-7 {
     width: 58.33333%; }
-  .grid-tuto .col-8 {
+  .grid-tuto .col-x-8 {
     width: 66.66667%; }
-  .grid-tuto .col-9 {
+  .grid-tuto .col-x-9 {
     width: 75%; }
-  .grid-tuto .col-10 {
+  .grid-tuto .col-x-10 {
     width: 83.33333%; }
-  .grid-tuto .col-11 {
+  .grid-tuto .col-x-11 {
     width: 91.66667%; }
-  .grid-tuto .col-12 {
+  .grid-tuto .col-x-12 {
     width: 100%; }
+  @media only screen and (min-width: 320px) {
+    .grid-tuto .col-s-1 {
+      width: 8.33333%; }
+    .grid-tuto .col-s-2 {
+      width: 16.66667%; }
+    .grid-tuto .col-s-3 {
+      width: 25%; }
+    .grid-tuto .col-s-4 {
+      width: 33.33333%; }
+    .grid-tuto .col-s-5 {
+      width: 41.66667%; }
+    .grid-tuto .col-s-6 {
+      width: 50%; }
+    .grid-tuto .col-s-7 {
+      width: 58.33333%; }
+    .grid-tuto .col-s-8 {
+      width: 66.66667%; }
+    .grid-tuto .col-s-9 {
+      width: 75%; }
+    .grid-tuto .col-s-10 {
+      width: 83.33333%; }
+    .grid-tuto .col-s-11 {
+      width: 91.66667%; }
+    .grid-tuto .col-s-12 {
+      width: 100%; } }
+  @media only screen and (min-width: 480px) {
+    .grid-tuto .col-m-1 {
+      width: 8.33333%; }
+    .grid-tuto .col-m-2 {
+      width: 16.66667%; }
+    .grid-tuto .col-m-3 {
+      width: 25%; }
+    .grid-tuto .col-m-4 {
+      width: 33.33333%; }
+    .grid-tuto .col-m-5 {
+      width: 41.66667%; }
+    .grid-tuto .col-m-6 {
+      width: 50%; }
+    .grid-tuto .col-m-7 {
+      width: 58.33333%; }
+    .grid-tuto .col-m-8 {
+      width: 66.66667%; }
+    .grid-tuto .col-m-9 {
+      width: 75%; }
+    .grid-tuto .col-m-10 {
+      width: 83.33333%; }
+    .grid-tuto .col-m-11 {
+      width: 91.66667%; }
+    .grid-tuto .col-m-12 {
+      width: 100%; } }
+  @media only screen and (min-width: 1024px) {
+    .grid-tuto .col-l-1 {
+      width: 8.33333%; }
+    .grid-tuto .col-l-2 {
+      width: 16.66667%; }
+    .grid-tuto .col-l-3 {
+      width: 25%; }
+    .grid-tuto .col-l-4 {
+      width: 33.33333%; }
+    .grid-tuto .col-l-5 {
+      width: 41.66667%; }
+    .grid-tuto .col-l-6 {
+      width: 50%; }
+    .grid-tuto .col-l-7 {
+      width: 58.33333%; }
+    .grid-tuto .col-l-8 {
+      width: 66.66667%; }
+    .grid-tuto .col-l-9 {
+      width: 75%; }
+    .grid-tuto .col-l-10 {
+      width: 83.33333%; }
+    .grid-tuto .col-l-11 {
+      width: 91.66667%; }
+    .grid-tuto .col-l-12 {
+      width: 100%; } }

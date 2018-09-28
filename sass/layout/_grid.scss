@@ -120,7 +120,29 @@
     $columns: 12!default;
     $gutter: 20px!default;
     @for $i from 1 through $columns {
-        .col-#{$i} { width: $i / $columns * 100%; }
+        .col-x-#{$i} { width: $i / $columns * 100%; }
     }
 
+    // x s m l
+
+    $small: 320px;
+    $medium: 480px;
+    $large: 1024px;
+    // responsive "pour tous les écrans supérieurs à 320px"
+    @media only screen and (min-width: $small ) {
+        @for $i from 1 through $columns {
+            .col-s-#{$i} { width: $i / $columns * 100%; }
+        }
+    }
+    @media only screen and (min-width: $medium ) {
+        @for $i from 1 through $columns {
+            .col-m-#{$i} { width: $i / $columns * 100%; }
+        }
+    }
+    @media only screen and (min-width: $large ) {
+        @for $i from 1 through $columns {
+            .col-l-#{$i} { width: $i / $columns * 100%; }
+        }
+    }
+    // mobile first : on commence par remplir les plus petits class (col-x...)
 }
