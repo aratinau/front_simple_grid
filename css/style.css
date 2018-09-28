@@ -1,2 +1,110 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
 body {
-  background: green; }
+  box-sizing: border-box;
+  padding: 3rem; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777; }
+
+.row {
+  max-width: 120rem;
+  /* max veut dire "si on a assez d'espace, la largeur sera de cette valeur, sinon on s'adapte
+    contrairement a width qui garde en dur la largeur */
+  margin: 0 auto;
+  margin-bottom: 8rem; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    background: orange;
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 6rem) / 4) + (2 * 6rem)); }
+
+.grid-tuto {
+  /*
+    .col-1 {width: 8.33333%;}
+    .col-2 {width: 16.66667%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33333%;}
+    .col-5 {width: 41.66667%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33333%;}
+    .col-8 {width: 66.66667%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33333%;}
+    .col-11 {width: 91.66667%;}
+    .col-12 {width: 100%;}*/ }
+  .grid-tuto {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto; }
+  .grid-tuto:before, .grid-tuto:after,
+  .grid-tuto .row-tuto:before,
+  .grid-tuto .row-tuto:after {
+    content: " ";
+    display: table; }
+  .grid-tuto:after,
+  .grid-tuto .row-tuto:after {
+    clear: both; }
+  .grid-tuto [class*='col-'] {
+    width: 100%;
+    float: left;
+    min-height: 1px; }
+  .grid-tuto .tuto-content {
+    padding: 1em;
+    margin: 8px;
+    background: white;
+    text-align: center;
+    border: 1px solid #e3e3e3; }
+  .grid-tuto .col-1 {
+    width: 8.33333%; }
+  .grid-tuto .col-2 {
+    width: 16.66667%; }
+  .grid-tuto .col-3 {
+    width: 25%; }
+  .grid-tuto .col-4 {
+    width: 33.33333%; }
+  .grid-tuto .col-5 {
+    width: 41.66667%; }
+  .grid-tuto .col-6 {
+    width: 50%; }
+  .grid-tuto .col-7 {
+    width: 58.33333%; }
+  .grid-tuto .col-8 {
+    width: 66.66667%; }
+  .grid-tuto .col-9 {
+    width: 75%; }
+  .grid-tuto .col-10 {
+    width: 83.33333%; }
+  .grid-tuto .col-11 {
+    width: 91.66667%; }
+  .grid-tuto .col-12 {
+    width: 100%; }

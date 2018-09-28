@@ -1,0 +1,126 @@
+.row {
+    max-width: $grid-width;
+    /* max veut dire "si on a assez d'espace, la largeur sera de cette valeur, sinon on s'adapte
+    contrairement a width qui garde en dur la largeur */
+    margin: 0 auto;
+    margin-bottom: $gutter-vertical;
+
+    // pour supprimer la derniere marge de la page
+    &:not(:last-child) {
+        margin-bottom: $gutter-vertical;
+    }
+
+    // @include clearfix; // si on le supprime : l'espace ne se fait pas
+    // déplacer dans mixin ?
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    // nous voulons les class qui commencent par col
+    [class^="col-"] {
+        // pour utiliser une variable dans la fonction calc 
+        // il faut l'entourer de #${}
+        float: left;
+        
+        &:not(:last-child) {
+            margin-right: $gutter-horizontal;
+        }
+    }
+    // si nous voulions quelque chose qui contient col- n'importe où on aurait utilisé *
+    // $ pour la fin
+
+    .col-1-of-2 {
+        background: orange;
+        width: calc((100% - #{$gutter-horizontal}) / 2);
+    }
+    
+    .col-1-of-3 {
+        width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+    }
+    
+    .col-2-of-3 {
+        width: calc(2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal});
+    }
+
+    .col-1-of-4 {
+        width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+    }
+
+    // pour faire un 2-of-4 c'est 1-of-4 + goutiere + 1-of-4
+    .col-2-of-4 {
+        width: calc(2 * ((100% - 3 * #{$gutter-horizontal}) / 4) + #{$gutter-horizontal});
+    }
+
+    // pour faire un 3-of-4 c'est trois 1-of-4 et deux goutieres
+    .col-3-of-4 {
+        width: calc(3 * ((100% - 3 * #{$gutter-horizontal}) / 4) + (2 * #{$gutter-horizontal}));
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+///////////////grid youtube tuto////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+
+.grid-tuto {
+
+    & {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    // pas compris
+    &:before,
+    &:after,
+    .row-tuto:before,
+    .row-tuto:after {
+        content: " ";
+        display: table;
+    }
+    &:after,
+    .row-tuto:after {
+        clear: both;
+    }
+    // fin de pas compris
+    [class*='col-'] {
+        width: 100%;
+        float: left;
+        min-height: 1px;
+    }
+    .tuto-content {
+        padding: 1em;
+        margin: 8px;
+        background:  white;
+        // border-radius: 3px;
+        // box-shadow: 0 1px 1px rgba(0,0,0,.3);
+        text-align: center;
+        border: 1px solid #e3e3e3;
+    }
+    
+    // pour trouver ces valeurs :
+    // 100 divisé par le nombre de colonnes multiplié par la colonne en cours
+    /*
+    .col-1 {width: 8.33333%;}
+    .col-2 {width: 16.66667%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33333%;}
+    .col-5 {width: 41.66667%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33333%;}
+    .col-8 {width: 66.66667%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33333%;}
+    .col-11 {width: 91.66667%;}
+    .col-12 {width: 100%;}*/
+
+    $columns: 12!default;
+    $gutter: 20px!default;
+    @for $i from 1 through $columns {
+        .col-#{$i} { width: $i / $columns * 100%; }
+    }
+
+}
