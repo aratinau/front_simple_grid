@@ -74,6 +74,9 @@
     }
 
     // pas compris
+    // explication de grafikart
+    // https://youtu.be/OiqqaoctEeI?t=21m54s
+    // explique le .row-tuto { margin: 0 $gutter * -0.5; }
     &:before,
     &:after,
     .row-tuto:before,
@@ -100,6 +103,7 @@
         // box-shadow: 0 1px 1px rgba(0,0,0,.3);
         text-align: center;
         border: 1px solid #e3e3e3;
+        text-align: left;
     }
     .row-tuto {
         margin: 0 $gutter * -0.5;
