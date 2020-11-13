@@ -88,28 +88,52 @@ body {
     margin: 0 -0.5em; }
   .grid-tuto .col-x-1 {
     width: 8.33333%; }
+  .grid-tuto .col-x-offset-1 {
+    left: 8.33333%; }
   .grid-tuto .col-x-2 {
     width: 16.66667%; }
+  .grid-tuto .col-x-offset-2 {
+    left: 16.66667%; }
   .grid-tuto .col-x-3 {
     width: 25%; }
+  .grid-tuto .col-x-offset-3 {
+    left: 25%; }
   .grid-tuto .col-x-4 {
     width: 33.33333%; }
+  .grid-tuto .col-x-offset-4 {
+    left: 33.33333%; }
   .grid-tuto .col-x-5 {
     width: 41.66667%; }
+  .grid-tuto .col-x-offset-5 {
+    left: 41.66667%; }
   .grid-tuto .col-x-6 {
     width: 50%; }
+  .grid-tuto .col-x-offset-6 {
+    left: 50%; }
   .grid-tuto .col-x-7 {
     width: 58.33333%; }
+  .grid-tuto .col-x-offset-7 {
+    left: 58.33333%; }
   .grid-tuto .col-x-8 {
     width: 66.66667%; }
+  .grid-tuto .col-x-offset-8 {
+    left: 66.66667%; }
   .grid-tuto .col-x-9 {
     width: 75%; }
+  .grid-tuto .col-x-offset-9 {
+    left: 75%; }
   .grid-tuto .col-x-10 {
     width: 83.33333%; }
+  .grid-tuto .col-x-offset-10 {
+    left: 83.33333%; }
   .grid-tuto .col-x-11 {
     width: 91.66667%; }
+  .grid-tuto .col-x-offset-11 {
+    left: 91.66667%; }
   .grid-tuto .col-x-12 {
     width: 100%; }
+  .grid-tuto .col-x-offset-12 {
+    left: 100%; }
   @media only screen and (min-width: 320px) {
     .grid-tuto .col-s-1 {
       width: 8.33333%; }
